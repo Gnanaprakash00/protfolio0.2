@@ -1,0 +1,88 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: #0496c5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.show-status {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.show-mode:nth-child(1) {
+    color: red;
+    font-weight: 600;
+}
+
+.show-status .show-mode:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.show-status {
+    width: 900px;
+    height: 50px;
+    background-color: white;
+    border-radius: 4px;
+    padding: 1rem;
+}
+
+.system-text,
+.user-text {
+    width: 900px;
+    height: 240px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.user-text textarea {
+    border: none;
+    outline: none;
+    padding: 1rem;
+    word-spacing: 2px;
+    letter-spacing: 0.6px;
+    line-height: 1.5rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+h5 {
+    text-transform: uppercase;
+    color: white;
+}
+
+.system-text {
+    padding: 1rem;
+    word-spacing: 4px;
+    letter-spacing: 0.6px;
+    line-height: 1.5rem;
+    font-weight: 400;
+}
+
+.correct {
+    font-weight: bold;
+    color: green;
+}
+
+.incorrect {
+    font-weight: bold;
+    color: red;
+}
+
+.active {
+    font-weight: bold;
+}
